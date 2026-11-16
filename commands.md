@@ -1,4 +1,4 @@
-# G
+# Git
 
 ## config
 ```bash
@@ -26,10 +26,7 @@ XX = first character (status of file WRT staging area), second character (status
 A_ : file is present in the staging are and will be added to the repo when committed
 _M : file is modified and is present in the working directory
 M_ : file is modified and is present in staging area
-UU :
-
-
-
+UU : 
 
 #add_the changes to staging area
 >git add .
@@ -48,6 +45,15 @@ UU :
 
 #get the diff of current and previous file
 >git diff
+
+# go to previous version of commit
+>git checkout
+
+#remove all the changes from staging area and move then to working area
+>git reset
+
+# all the changes (from working dir to staging area will be reomoved) cation!!
+>git reset --hard
 
 ```
 
