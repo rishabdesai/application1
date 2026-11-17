@@ -26,7 +26,7 @@ XX = first character (status of file WRT staging area), second character (status
 A_ : file is present in the staging are and will be added to the repo when committed
 _M : file is modified and is present in the working directory
 M_ : file is modified and is present in staging area
-UU : 
+UU : the file has got at least one conflict
 
 #add_the changes to staging area
 >git add .
@@ -121,4 +121,33 @@ git merge branch_name
 
 #delete a branch
 git branch -d branch_name
+```
+
+
+```bash
+#squash merge
+- collect all commit object of second branch and turn then into a single object
+- then the single object gets merged in the source branch
+- this will help git to reduce the commit.
+
+```
+
+## stash
+
+```bash
+#git the list of changes parked in the stash area
+git stash list
+#move the changes from working directory to stash area
+git stash save "comment"
+
+#get the details of a stash entry
+git stash show stash@{0}
+
+#apply the changes from stash area to working directory
+git stash apply stash@{1}
+
+#delete the stash object
+git stash drop stash@{1}
+
+
 ```
