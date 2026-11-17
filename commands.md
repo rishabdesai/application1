@@ -79,6 +79,7 @@ UU :
 
 -refs
 -Head
+    - file which has entry of current branch
 -branches
 ```
 
@@ -96,3 +97,20 @@ UU :
 
 ```
 
+## branch
+
+- a branch is a pointer to a commit object
+
+
+```bash
+#get list of branches
+>git branch
+
+#create a new branch
+>git branch branch_name
+# switch to other branch
+>git checkout branch_name
+
+
+
+```
