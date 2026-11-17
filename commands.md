@@ -69,10 +69,30 @@ UU :
 -description
     - description about the repo
 -objects
-
+    - stores encrypted metadata
+    - types
+        -commit: object file which commit info 
+        -tree: object file which contains the mapping of blob object file with their respective file names
+        -blob: object file which stores the content of the file
+    
 -info
 
 -refs
 -Head
 -branches
 ```
+
+
+```bash
+#find the type of the object
+# -t: type
+>git cat-file -t <<object-id>>
+
+#find the readable content of an object
+# -p: Pretty print
+>git cat-file -p <<object-id>>
+
+
+
+```
+
