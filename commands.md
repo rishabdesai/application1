@@ -57,3 +57,22 @@ UU :
 
 ```
 
+## git internals
+
+```bash
+
+-hooks
+    - contains the scripts to be executed on different events
+-config
+    - file contains local repo configuration
+    - the config is restricted only for the current repo
+-description
+    - description about the repo
+-objects
+
+-info
+
+-refs
+-Head
+-branches
+```
