@@ -110,7 +110,10 @@ UU :
 >git branch branch_name
 # switch to other branch
 >git checkout branch_name
-
+# merge the chages form one branch to another
+# first checkout the branch in which you want to merge another branch 
+git chechout main
+git merge branch_name
 
 
 ```
