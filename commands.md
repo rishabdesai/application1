@@ -104,16 +104,21 @@ UU :
 
 ```bash
 #get list of branches
->git branch
+git branch
 
 #create a new branch
->git branch branch_name
+git branch branch_name
+# create new branch and checkout immediately
+git checkout -b branch_name
+
 # switch to other branch
->git checkout branch_name
+git checkout branch_name
+
 # merge the chages form one branch to another
 # first checkout the branch in which you want to merge another branch 
 git chechout main
 git merge branch_name
 
-
+#delete a branch
+git branch -d branch_name
 ```
